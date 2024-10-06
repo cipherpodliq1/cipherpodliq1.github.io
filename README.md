@@ -4,7 +4,7 @@ Welcome to CipherPodliq's den of cyber espionage and security research. Here, we
 
 ## Table of Contents
 
-- [TU-Sofia](tusofia)
+- [TU-Sofia](#tusofia)
 - [Offensive Security](#offensive-security)
 - [Red Team Infrastructure](#red-team-infrastructure)
 - [Initial Access](#initial-access)
