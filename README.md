@@ -21,6 +21,13 @@ Welcome to CipherPodliq's den of cyber espionage and security research. Here, we
 - [Forensic Analysis](#forensic-analysis)
 - [Security Tools](#security-tools)
 
+## TU-Sofia
+
+- 3
+- 4
+- 5
+- 6
+
 ## Offensive Security
 
 _Embrace the dark art of offensive security. Here, you'll find the techniques and tactics used to probe and penetrate the defenses of target systems. Topics include:_
