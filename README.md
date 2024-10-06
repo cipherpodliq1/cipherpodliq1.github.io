@@ -23,7 +23,7 @@ Welcome to CipherPodliq's den of cyber espionage and security research. Here, we
 
 ## TU-Sofia
 
-- 3
+- [3](tu-sofia-3.md)
 - 4
 - 5
 - 6
