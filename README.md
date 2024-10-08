@@ -20,6 +20,7 @@ Welcome to CipherPodliq's den of cyber espionage and security research. Here, we
 - [Malware Development](#malware-development)
 - [Forensic Analysis](#forensic-analysis)
 - [Security Tools](#security-tools)
+- [Rust Programming](#rustprogramming)
 
 ## TU-Sofia
 
