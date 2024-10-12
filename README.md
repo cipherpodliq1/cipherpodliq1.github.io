@@ -1,6 +1,7 @@
 # CipherPodliq's Security Research Blog
 
 Welcome to CipherPodliq's den of cyber espionage and security research. Here, we dive into the shadows of the digital realm, unraveling the art of offensive security and the science of malware development. Explore the depths of my research and findings below.
+You can contact me at cipherpodliq@proton.me
 
 ## Table of Contents
 
