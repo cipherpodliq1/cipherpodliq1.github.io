@@ -103,7 +103,7 @@ Show file sizes: Use os.path.getsize() to display file sizes next to each file n
 
 Limit the depth: Add a max_depth parameter and increase depth with each recursion, stopping if depth reaches max_depth.
 
-### Task 4: File Backup System (Windows)
+## Task 4: File Backup System (Windows)
 
 Description: Create a simple file backup system that copies files from a specified source directory to a destination directory on a Windows system, appending a timestamp to each copied file's name. The program should log the names of the copied files and the timestamp of each backup operation.
 
