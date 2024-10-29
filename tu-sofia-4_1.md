@@ -169,3 +169,141 @@ Selective Backup: Allow the user to specify which file types to backup (e.g., .t
 Error Handling: Gracefully handle potential errors (e.g., missing directories, permission issues) and log these errors.
 
 Detailed Backup Log: Maintain a comprehensive log file that includes not just successful backups but also any errors encountered during the process.
+
+## Task 5 -> Interact with Gemini
+
+Task 1: Accessing Gemini LLM
+
+Create a Google Cloud Account
+
+If you don’t have a Google Cloud account, go to Google Cloud Console and sign up.
+
+Enable Gemini API
+
+Once logged in, navigate to the API & Services dashboard.
+Search for the Gemini API in the API library and enable it for your project.
+
+Create API Key:
+
+Task 2: Basic Interaction with Gemini LLM
+pip install requests
+
+Write a Python Script:
+
+Use the following pseudocode as a guide to send a basic prompt to the Gemini LLM and receive a response.
+
+Pseudocode:
+```plaintext
+
+FUNCTION query_gemini_llm(api_key, prompt):
+    SET endpoint = "https://gemini.googleapis.com/v1/complete"
+    SET url = endpoint
+
+    SET headers = {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer " + api_key
+    }
+
+    SET data = {
+        "prompt": prompt,
+        "max_tokens": 100  // Adjust the number of tokens as needed
+    }
+
+    SET response = MAKE_POST_REQUEST(url, headers, data)
+
+    IF response is successful THEN:
+        PRINT "Response:", response["choices"][0]["text"]
+    ELSE:
+        PRINT "Error querying Gemini LLM:", response["error"]["message"]
+
+FUNCTION main():
+    SET api_key = "YOUR_API_KEY"
+    SET prompt = "What is the capital of France?"
+
+    CALL query_gemini_llm(api_key, prompt)
+
+CALL main()
+```
+
+
+Task 3: Generating Text with Custom Parameters
+
+Modify your script to allow for custom parameters such as max_tokens, temperature, and top_p.
+Pseudocode:
+```
+FUNCTION query_gemini_llm(api_key, prompt, max_tokens, temperature, top_p):
+    SET endpoint = "https://gemini.googleapis.com/v1/complete"
+    SET url = endpoint
+
+    SET headers = {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer " + api_key
+    }
+
+    SET data = {
+        "prompt": prompt,
+        "max_tokens": max_tokens,
+        "temperature": temperature,
+        "top_p": top_p
+    }
+
+    // Make the POST request and handle response as before
+
+FUNCTION main():
+    SET api_key = "YOUR_API_KEY"
+    SET prompt = "Explain the theory of relativity."
+    SET max_tokens = 150
+    SET temperature = 0.7
+    SET top_p = 0.9
+
+    CALL query_gemini_llm(api_key, prompt, max_tokens, temperature, top_p)
+
+CALL main()
+```
+
+Task 4: Handling User Input and Outputs
+
+Update your script to take user input for prompts and display responses in a user-friendly way.
+
+Pseudocode:
+```
+FUNCTION main():
+    SET api_key = "YOUR_API_KEY"
+    WHILE True:
+        PRINT "Enter your prompt (or type 'exit' to quit):"
+        SET prompt = USER_INPUT()
+
+        IF prompt EQUALS "exit" THEN:
+            BREAK
+
+        CALL query_gemini_llm(api_key, prompt)
+
+CALL main()
+```
+
+Task 5: Error Handling and Logging
+
+Add error handling to manage common issues like network errors or API errors, and log the errors to a file.
+
+Pseudocode:
+
+```
+FUNCTION safe_query(api_key, prompt):
+    TRY:
+        RETURN query_gemini_llm(api_key, prompt)
+    EXCEPT Exception AS e:
+        LOG_ERROR("Error querying Gemini LLM: " + e)
+
+FUNCTION main():
+    // Same as before with safe_query
+
+CALL main()
+```
+
+
+
+
+
+
+
+
