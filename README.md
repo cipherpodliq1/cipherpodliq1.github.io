@@ -6,7 +6,7 @@ You can contact me at cipherpodliq@proton.me
 ## Table of Contents
 
 - [TU-Sofia](#tu-sofia)
-- [Offensive Security](#offensive-security)
+- [Rust Programming](#rust-programming)
 - [Red Team Infrastructure](#red-team-infrastructure)
 - [Initial Access](#initial-access)
 - [Code Execution](#code-execution)
@@ -21,7 +21,7 @@ You can contact me at cipherpodliq@proton.me
 - [Malware Development](#malware-development)
 - [Forensic Analysis](#forensic-analysis)
 - [Security Tools](#security-tools)
-- [Rust Programming](rustprogramming.md)
+
 
 ## TU-Sofia
 
@@ -31,14 +31,11 @@ You can contact me at cipherpodliq@proton.me
 - [5](tu-sofia-5.md)
 - 6
 
-## Offensive Security
+## Rust-Programming
 
-_Embrace the dark art of offensive security. Here, you'll find the techniques and tactics used to probe and penetrate the defenses of target systems. Topics include:_
+_В тази част от блога ще се запознаете с езика Rust, и с това как бихте могли да го използвате за (не толкова)користни цели :_
 
-- Penetration Testing
-- Vulnerability Assessment
-- Exploit Development
-- Social Engineering
+- [Първи скенер на Rust](firstrustscanner.md)
 
 ## Red Team Infrastructure
 
