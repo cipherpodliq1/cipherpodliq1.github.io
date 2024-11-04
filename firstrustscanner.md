@@ -1,1 +1,3 @@
-Код към упражнението : [тук.](https://github.com/cipherpodliq1/Rust-Port-and-Subdomain-Scanner)
+Lecture Code : [тук.](https://github.com/cipherpodliq1/Rust-Port-and-Subdomain-Scanner)
+
+
