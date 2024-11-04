@@ -33,9 +33,7 @@ You can contact me at cipherpodliq@proton.me
 
 ## Rust-Programming
 
-_В тази част от блога ще се запознаете с езика Rust, и с това как бихте могли да го използвате за (не толкова)користни цели :_
-
-- [Първи скенер на Rust](firstrustscanner.md)
+- [First Rust Scanner](firstrustscanner.md)
 
 ## Red Team Infrastructure
 
