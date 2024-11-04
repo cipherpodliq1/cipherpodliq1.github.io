@@ -130,6 +130,17 @@ f(qty=6, item='bananas', price=1.74)
 #6 bananas cost $1.74
 ```
 
+Използването на ключова дума, която не съответства на нито един от декларираните параметри, генерира изключение:
+
+```python
+f(qty=6, item='bananas', cost=1.74)
+Traceback (most recent call last):
+File "<stdin>", line 1, in <module>
+TypeError: f() got an unexpected keyword argument 'cost'
+```
+
+### Параметри по подразбиране (default)
+
 ## Излизане от функция
 
 "Return" предизвиква незабавно излизане от блока на функцията и предава управлението на изпълнението обратно на викащата функция (main функцията)
