@@ -131,6 +131,38 @@ But the problem is , that if we leave the scanner this way, it will be really sl
 
 # Multi-Threading
 
+Fortunately for us , there is this thing called *threads*.
 
+[Threads](https://www.geeksforgeeks.org/thread-in-operating-system/) are primitives provided by the Operating System (OS) that enable developers to use the hardware cores and threads of the cpu. In rust we can spawn threads with -> std::thread::spawn function.
 
+![{CE2F32C2-AC1F-41B5-A931-9950A383D27B}](https://github.com/user-attachments/assets/15e08ff2-6d13-488d-87ac-51d90be5e351)
 
+Each CPU thread can be seen as an independent worker: the workload can be split among the workers. This is especially important as today, due to the law of physics, processors have a hard time scaling up in terms of operations per second (GHz). For those of you that are interested -> this is mostly due to , thermal limites, power consumption , quantum tunneling and Physical Limits of Light Speed and Signal Propagation.
+ 
+Instead, vendors increase the number of cores and threads. Developers have to adapt and design their programs to split the workload between the available threads instead of trying to do all the operations on a single thread, as they sooner or later reach the limit of the processor. With threads, we can split a big task into smaller sub-tasks that can be executed in parallel. In our situation, we will dispatch a task per port to scan. Thus, if we have 100 ports to scan, we will create 100 tasks. Instead of running all those tasks in sequence like we previously did, we are going to run them on multiple threads. If we have 10 threads, with a 3 seconds timeout, it may take up to 30 seconds ( 10 * 3 )to scan all the ports for a single host. If we increase this number to 100 threads, then we will be able to scan 100 ports in only 3 seconds
+
+## Concurrency issues 
+
+Using threads is not an easy win. Many developers fear the concurrency issues which come with multi-threading. Due to the unexpected behaviour, they are extremely hard to spot and debug.  Theycangoundetectedfora longtime, and then, oneday, simply because your system is handling more requests per second or because you upgraded your CPU, your application starts to behave strangely. The cause is almost always that a concurrency bug is hidden in your code.
+
+ One of themost fabulous things aboutRust is that thanks to its ownershipsystem, the compiler guarantees our programs to be datarace free.
+
+## Three causes of data races 
+- Two or more pointers access the same data at the same time
+- At least one of the pointers is being used to write data
+- There is no mechanism to synchronize access to the data amongs threads (thread lock)
+
+## Three rules of ownership
+- Each value in rust has a variable thats called "owner"
+- There can be only one owner at a time
+- When the owner goes out of scope, the value will be dropped
+
+## Two rules of references
+- At any given time, you can have either one mutable reference or any number of immutable reference
+- References must always be valid
+
+Other concurrency errors you might face include -> deadlocks and race conditions.
+
+# Adding multi-threading to our scanner.
+
+  
