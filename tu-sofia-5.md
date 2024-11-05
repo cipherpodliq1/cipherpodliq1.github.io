@@ -258,3 +258,11 @@ f()['baz']
 
 5. На функция се подават два аргумента: списък с числа и число. Променете
 всички елементи от списъка със стойност по-голяма от даденото число на 0(нула).
+
+6. Write a function longest_word(sentence) that returns the longest word in a given sentence.
+
+7. Write a function caesar_cipher(text, shift) that takes a string and an integer shift and returns an encoded string using Caesar cipher (each letter shifted by the given number).
+
+8. Write a function pascals_triangle(rows) that prints Pascal's triangle up to the given number of rows.
+
+9. Write a function solve_sudoku(board) that takes a 9x9 grid representing a Sudoku puzzle and solves it using backtracking.
