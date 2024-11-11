@@ -29,7 +29,7 @@ You can contact me at cipherpodliq@proton.me
 - [4](tu-sofia-4.md)
 - [4.1](tu-sofia-4_1.md)
 - [5](tu-sofia-5.md)
-- 6
+- [6](tu-sofia-6.md)
 
 ## Rust-Programming
 
