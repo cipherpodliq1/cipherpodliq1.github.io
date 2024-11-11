@@ -70,7 +70,7 @@ MyPerso.age = 40
 
 ## Какво представлява наследяването?
 
-Наследяването е едно от 3те основни неща с които се характеризира (OOP)[https://www.techelevator.com/the-3-pillars-of-object-oriented-programming-oop-brought-down-to-earth/#:~:text=There%20are%20three%20major%20pillars,encapsulation%2C%20inheritance%2C%20and%20polymorphism.].
+Наследяването е едно от 3те основни неща с които се характеризира [OOP](https://www.techelevator.com/the-3-pillars-of-object-oriented-programming-oop-brought-down-to-earth/#:~:text=There%20are%20three%20major%20pillars,encapsulation%2C%20inheritance%2C%20and%20polymorphism).
 
 Това е подход, който позволява един клас да наследи всички методи и свойства на друг клас. Наследяваният клас се нарича клас-родител. Наследяващият клас се нарича клас-дете.
 
