@@ -184,9 +184,10 @@ Create an instance of the chosen character and an Enemy (e.g., a Goblin).
 Create a simple turn-based battle loop where the player and enemy take turns attacking each other.
 The game ends when either the player or the enemy's health reaches 0.
 
-- Example Interaction
+- Example Interaction:
+
+
 ```
-Copy code
 Welcome to Battle of the Realms!
 Enter your character's name: Thorin
 Choose your class (Warrior, Mage, Archer): Warrior
