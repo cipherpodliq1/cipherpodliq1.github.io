@@ -154,3 +154,50 @@ class Student(Person):
 3. Да се добави още един клас - Lecturer , наследник на класа Person с две нови полета - университет и опит. Да се предефинира методът print.
 
 ## Допълнителни: 
+
+In this exercise, you will build a simple text-based RPG game using classes, objects, and inheritance. You will create different character types with unique abilities and set up a battle scenario against an enemy.
+
+### Instructions
+Create the Base Class Character:
+
+Define attributes for name, health, attack_power, and defense.
+Define the following methods:
+
+- attack(target): Reduces the target’s health by self.attack_power.
+- take_damage(amount): Reduces the character's health by amount, considering the character’s defense.
+- is_alive(): Returns True if health > 0, otherwise False.
+
+Create Subclasses for Warrior, Mage, and Archer. Each subclass should inherit from Character. Each subclass should have a unique version of the attack method:
+- Warrior: Deals additional damage when health is low.
+
+- Mage: Occasionally deals double damage by casting a "spell."
+
+- Archer: Has a chance to land a critical hit that increases damage.
+
+Create an Enemy Class:
+Define attributes similar to the Character class (e.g., name, health, attack_power, defense).
+Implement similar methods to handle the enemy’s attack and damage.
+
+Game Loop:
+Prompt the player to choose a character class (Warrior, Mage, or Archer).
+Create an instance of the chosen character and an Enemy (e.g., a Goblin).
+Create a simple turn-based battle loop where the player and enemy take turns attacking each other.
+The game ends when either the player or the enemy's health reaches 0.
+
+- Example Interaction
+```
+Copy code
+Welcome to Battle of the Realms!
+Enter your character's name: Thorin
+Choose your class (Warrior, Mage, Archer): Warrior
+
+A wild Goblin appears!
+
+Do you want to (A)ttack or (R)un? A
+Thorin attacks the Goblin.
+Goblin takes damage! Remaining health: 20
+
+Goblin attacks back!
+Thorin takes damage! Remaining health: 45
+```
+
