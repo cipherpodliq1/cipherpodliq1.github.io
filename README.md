@@ -30,7 +30,7 @@ You can contact me at cipherpodliq@proton.me
 - [4.1](tu-sofia-4_1.md)
 - [5](tu-sofia-5.md)
 - [6](tu-sofia-6.md)
-
+- [Primeren Izpit](izpit.md)
 ## Rust-Programming
 
 - [First Rust Scanner](firstrustscanner.md)
