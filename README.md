@@ -31,6 +31,9 @@ You can contact me at cipherpodliq@proton.me
 - [5](tu-sofia-5.md)
 - [6](tu-sofia-6.md)
 - [Primeren Izpit](izpit.md)
+- [Praktikum-Github](praktikum1.md)
+
+  
 ## Rust-Programming
 
 - [First Rust Scanner](firstrustscanner.md)
