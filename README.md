@@ -7,7 +7,7 @@ You can contact me at cipherpodliq@proton.me
 
 - [TU-Sofia](#tu-sofia)
 - [Rust Programming](#rust-programming)
-- [Red Team Infrastructure](#red-team-infrastructure)
+- [Подготовка за PCEP](#Подготовка-за-PCEP)
 - [Initial Access](#initial-access)
 - [Code Execution](#code-execution)
 - [Code & Process Injection](#code--process-injection)
@@ -39,13 +39,13 @@ You can contact me at cipherpodliq@proton.me
 
 - [First Rust Scanner](firstrustscanner.md)
 
-## Red Team Infrastructure
+## Подготовка-за-PCEP
 
-_Set up and fortify your Red Team operations. Learn about the infrastructure needed for effective Red Teaming:_
+_Документирам подготовката си за PCEP сертификат, като по този начин помагам на други които се подготвят за изпита.:_
 
-- Tool Selection and Configuration
-- Command and Control (C2) Servers
-- Infrastructure Hardening
+- [Част 1](podgotovkazapcep_1.md)
+- [Част 2](podgotovkazapcep_2.md)
+- [Част 3](podgotovkazapcep_3.md)
 
 ## Initial Access
 
